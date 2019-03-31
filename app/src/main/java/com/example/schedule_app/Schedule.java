@@ -86,7 +86,7 @@ public class Schedule extends AppCompatActivity {
     }
 
     public void writeFile() throws IOException {
-        FileWriter filewriter = new FileWriter("Courses");
+        FileWriter filewriter = new FileWriter("Courses.txt");
         PrintWriter printwriter = new PrintWriter(filewriter);
         EditText editText = (EditText) findViewById(R.id.editText2);
         String name = editText.getText().toString();

@@ -27,7 +27,7 @@ public class Table extends AppCompatActivity {
         //Add entries here
         Scanner scan = new Scanner("");
         try {
-            scan = new Scanner(new File("Courses"));
+            scan = new Scanner(new File("Courses.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
