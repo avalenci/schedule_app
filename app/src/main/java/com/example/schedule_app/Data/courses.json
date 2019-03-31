@@ -1,88 +1,88 @@
 {
  "course": [
   {
-   "name": "CSC 110. Fundamentals in Computer Science. 3 Credits."
+   "name": "CSC 110: Fundamentals in Computer Science"
   },
   {
-   "name": "CSC 115. Introduction to Computer Programming. 3 Credits."
+   "name": "CSC 115: Introduction to Computer Programming"
   },
   {
-   "name": "CSC 141. Computer Science I. 3 Credits."
+   "name": "CSC 141: Computer Science I"
   },
   {
-   "name": "CSC 142. Computer Science II. 3 Credits."
+   "name": "CSC 142: Computer Science II"
   },
   {
-   "name": "CSC 220. Foundations of Computer Science. 3 Credits."
+   "name": "CSC 220: Foundations of Computer Science"
   },
   {
-   "name": "CSC 240. Computer Science III. 3 Credits."
+   "name": "CSC 240: Computer Science III"
   },
   {
-   "name": "CSC 241. Data Structures & Algorithms. 3 Credits."
+   "name": "CSC 241: Data Structures & Algorithms"
   },
   {
-   "name": "CSC 242. Computer Organization. 3 Credits."
+   "name": "CSC 242: Computer Organization"
   },
   {
-   "name": "CSC 300. Cooperative Programming. 3 Credits."
+   "name": "CSC 300: Cooperative Programming"
   },
   {
-   "name": "CSC 301. Computer Security I. 3 Credits."
+   "name": "CSC 301: Computer Security I"
   },
   {
-   "name": "CSC 302. Computer Security II. 3 Credits."
+   "name": "CSC 302: Computer Security II"
   },
   {
-   "name": "CSC 317. Visual Programming. 3 Credits."
+   "name": "CSC 317: Visual Programming"
   },
   {
-   "name": "CSC 321. Data Base Management Systems. 3 Credits."
+   "name": "CSC 321: Data Base Management Systems"
   },
   {
-   "name": "CSC 331. Operating Systems. 3 Credits."
+   "name": "CSC 331: Operating Systems"
   },
   {
-   "name": "CSC 335. Data Communications and Networking I. 3 Credits."
+   "name": "CSC 335: Data Communications and Networking I"
   },
   {
-   "name": "CSC 336. Data Communications and Networking II. 3 Credits."
+   "name": "CSC 336: Data Communications and Networking II"
   },
   {
-   "name": "CSC 345. Programming Language Concepts/Paradigms. 3 Credits."
+   "name": "CSC 345: Programming Language Concepts/Paradigms"
   },
   {
-   "name": "CSC 400. Internship. 6 Credits."
+   "name": "CSC 400: Internship. 6 Credits."
   },
   {
-   "name": "CSC 402. Software Engineering. 3 Credits."
+   "name": "CSC 402: Software Engineering"
   },
   {
-   "name": "CSC 404. Software Engineering & Testing. 3 Credits."
+   "name": "CSC 404: Software Engineering & Testing"
   },
   {
-   "name": "CSC 416. Design/Construction Compilers. 3 Credits."
+   "name": "CSC 416: Design/Construction Compilers"
   },
   {
-   "name": "CSC 417. User Interfaces. 3 Credits."
+   "name": "CSC 417: User Interfaces"
   },
   {
-   "name": "CSC 476. Game Development. 3 Credits."
+   "name": "CSC 476: Game Development"
   },
   {
-   "name": "CSC 481. Artificial Intelligence. 3 Credits."
+   "name": "CSC 481: Artificial Intelligence"
   },
   {
-   "name": "CSC 490. Independent Project in Computer Science. 3 Credits."
+   "name": "CSC 490: Independent Project in Computer Science"
   },
   {
-   "name": "CSC 495. Topics in Computer Science. 3 Credits."
+   "name": "CSC 495: Topics in Computer Science"
   },
   {
-   "name": "CSC 496. Topics in Complex Large-Scale Systems. 3 Credits."
+   "name": "CSC 496: Topics in Complex Large-Scale Systems"
   },
   {
-   "name": "CSC 499. Independent Study in Computer Science. 3 Credits."
+   "name": "CSC 499: Independent Study in Computer Science"
   }
  ]
 }
