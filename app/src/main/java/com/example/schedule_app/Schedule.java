@@ -77,33 +77,22 @@ public class Schedule extends AppCompatActivity {
         spinner7.setAdapter(adapter4);
     }
 
-    public void newClass(View view) {
+    public void newClass(View view) throws IOException {
+//        EditText editText = (EditText) findViewById(R.id.editText2);
+//        String name = editText.getText().toString();
+//        int hour1 = Integer.parseInt(spinner.getSelectedItem().toString());
+//        int hour2 = Integer.parseInt(spinner2.getSelectedItem().toString());
+//        int minute1 = Integer.parseInt(spinner3.getSelectedItem().toString());
+//        int minute2 = Integer.parseInt(spinner4.getSelectedItem().toString());
+//        String AMPM1 = spinner5.getSelectedItem().toString();
+//        String AMPM2 = spinner6.getSelectedItem().toString();
+//        String days = spinner7.getSelectedItem().toString();
+//        PrintWriter printwriter = new PrintWriter(new FileWriter("Courses.txt"));
+//        printwriter.print(name + " " + hour1 + " " + minute1 + " " + hour2 + " " + minute2
+//                + " " + AMPM1 + " " + AMPM2 + " " + days);
+//        printwriter.close();
         Intent intent = new Intent(this, Table.class);
-        EditText editText = (EditText) findViewById(R.id.editText2);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        try {
-            writeFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         startActivity(intent);
-    }
-
-    public void writeFile() throws IOException {
-        EditText editText = (EditText) findViewById(R.id.editText2);
-        String name = editText.getText().toString();
-        int hour1 = Integer.parseInt(spinner.getSelectedItem().toString());
-        int hour2 = Integer.parseInt(spinner2.getSelectedItem().toString());
-        int minute1 = Integer.parseInt(spinner3.getSelectedItem().toString());
-        int minute2 = Integer.parseInt(spinner4.getSelectedItem().toString());
-        String AMPM1 = spinner5.getSelectedItem().toString();
-        String AMPM2 = spinner6.getSelectedItem().toString();
-        String days = spinner7.getSelectedItem().toString();
-        PrintWriter printwriter = new PrintWriter(new FileWriter("Courses.txt"));
-        printwriter.write(name + " " + hour1 + " " + minute1 + " " + hour2 + " " + minute2
-                + " " + AMPM1 + " " + AMPM2 + " " + days);
-        printwriter.close();
     }
 
 }

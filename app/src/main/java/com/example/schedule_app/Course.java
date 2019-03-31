@@ -16,7 +16,7 @@ public class Course {
     private String days;
 
     Course() {
-
+        name = "";
     }
     Course(String name, int hour1, int minute1, int hour2, int minute2, String AMPM1, String AMPM2, String days) {
         this.name = name;

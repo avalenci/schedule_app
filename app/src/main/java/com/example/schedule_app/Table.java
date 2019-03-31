@@ -8,8 +8,6 @@ import android.widget.ListView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -29,7 +27,7 @@ public class Table extends AppCompatActivity {
         //Add entries here
         Scanner scan = new Scanner("");
         try {
-            scan = new Scanner(new File("Courses"));
+            scan = new Scanner(new File("Courses.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
