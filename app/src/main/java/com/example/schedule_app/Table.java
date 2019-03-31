@@ -8,12 +8,14 @@ import android.widget.ListView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Table extends AppCompatActivity {
 
+    Course newCourse = new Course();
     ListView listview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +29,10 @@ public class Table extends AppCompatActivity {
         //Add entries here
         Scanner scan = new Scanner("");
         try {
-            scan = new Scanner(new File("Courses.txt"));
+            scan = new Scanner(new File("Courses"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        Course newCourse = new Course();
         while (scan.hasNext()) {
             String name = scan.next();
             int hour1 = scan.nextInt();
@@ -41,15 +42,12 @@ public class Table extends AppCompatActivity {
             String AMPM1 = scan.next();
             String AMPM2 = scan.next();
             String days = scan.next();
-            try {
-                newCourse = new Course(name, hour1, minute1, hour2, minute2, AMPM1, AMPM2, days);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            newCourse = new Course(name, hour1, minute1, hour2, minute2, AMPM1, AMPM2, days);
         }
         arrayList.add(newCourse.toString());
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+
         listview.setAdapter(arrayAdapter);
     }
 

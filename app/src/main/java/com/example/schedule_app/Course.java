@@ -18,7 +18,7 @@ public class Course {
     Course() {
 
     }
-    Course(String name, int hour1, int minute1, int hour2, int minute2, String AMPM1, String AMPM2, String days) throws IOException {
+    Course(String name, int hour1, int minute1, int hour2, int minute2, String AMPM1, String AMPM2, String days) {
         this.name = name;
         this.hour1 = hour1;
         this.hour2 = hour2;

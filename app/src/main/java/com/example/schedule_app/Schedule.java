@@ -82,12 +82,15 @@ public class Schedule extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText2);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
+        try {
+            writeFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         startActivity(intent);
     }
 
     public void writeFile() throws IOException {
-        FileWriter filewriter = new FileWriter("Courses.txt");
-        PrintWriter printwriter = new PrintWriter(filewriter);
         EditText editText = (EditText) findViewById(R.id.editText2);
         String name = editText.getText().toString();
         int hour1 = Integer.parseInt(spinner.getSelectedItem().toString());
@@ -97,6 +100,7 @@ public class Schedule extends AppCompatActivity {
         String AMPM1 = spinner5.getSelectedItem().toString();
         String AMPM2 = spinner6.getSelectedItem().toString();
         String days = spinner7.getSelectedItem().toString();
+        PrintWriter printwriter = new PrintWriter(new FileWriter("Courses.txt"));
         printwriter.write(name + " " + hour1 + " " + minute1 + " " + hour2 + " " + minute2
                 + " " + AMPM1 + " " + AMPM2 + " " + days);
         printwriter.close();
