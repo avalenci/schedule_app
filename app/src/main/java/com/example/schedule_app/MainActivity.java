@@ -2,9 +2,7 @@ package com.example.schedule_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     /** Check if this device has a camera */
 
     //Use this to test methods
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, Test.class);
+    public void newSchedule(View view) {
+        Intent intent = new Intent(this, StartSchedule.class);
         String message = "";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
