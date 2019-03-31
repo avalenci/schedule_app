@@ -6,6 +6,8 @@ import android.icu.util.Calendar;
 public class Course {
 
     private String name;
+    private Calendar startDate;
+    private Calendar endDate;
 
     private void setName(String _name) {
         this.name = _name;
