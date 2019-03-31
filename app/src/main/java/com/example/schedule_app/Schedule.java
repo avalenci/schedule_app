@@ -29,6 +29,7 @@ public class Schedule extends AppCompatActivity {
         Spinner spinner4 = (Spinner) findViewById(R.id.spinner4);
         Spinner spinner5 = (Spinner) findViewById(R.id.spinner5);
         Spinner spinner6 = (Spinner) findViewById(R.id.spinner6);
+        Spinner spinner7 = (Spinner) findViewById(R.id.spinner7);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.hour_array, android.R.layout.simple_spinner_item);
@@ -36,10 +37,13 @@ public class Schedule extends AppCompatActivity {
                 R.array.minute_array, android.R.layout.simple_spinner_item);
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
                 R.array.AMPM_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,
+                R.array.days_array, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         spinner2.setAdapter(adapter);
@@ -47,12 +51,14 @@ public class Schedule extends AppCompatActivity {
         spinner4.setAdapter(adapter2);
         spinner5.setAdapter(adapter3);
         spinner6.setAdapter(adapter3);
+        spinner7.setAdapter(adapter4);
     }
 
 
 
     public static void courseLoad() {
         Course newCourse[] = new Course[10];
+        int n = 0;
 //        while (buttonCheck()) {
 //
 //        }

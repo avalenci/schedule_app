@@ -9,6 +9,10 @@ public class Course {
     private Calendar startDate;
     private Calendar endDate;
 
+    public boolean conflicts(Course a, Course b) {
+        return true;
+    }
+
     private void setName(String _name) {
         this.name = _name;
     }
