@@ -79,7 +79,7 @@ public class Schedule extends AppCompatActivity {
 
     public void newClass(View view) {
         Intent intent = new Intent(this, Table.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
+        EditText editText = (EditText) findViewById(R.id.editText2);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
