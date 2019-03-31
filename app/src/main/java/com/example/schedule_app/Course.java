@@ -12,7 +12,6 @@ public class Course {
         this.name = _name;
         return _name;
     }
-
     private String getName() {
         return name;
     }
