@@ -12,6 +12,10 @@ public class StartSchedule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
+        for(int i=0; i<3; i++) {
+
+        }
     }
     public static void courseLoad() {
         Course newCourse[] = new Course[10];

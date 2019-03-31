@@ -1,19 +1,23 @@
 package com.example.schedule_app;
 
-import java.sql.Time;
-import java.util.Timer;
+import android.icu.util.Calendar;
+
 
 public class Course {
 
+    public Course(String name, String Date) {
+        name = getName();
+    }
+
     private String name;
 
-
-    private String setName(String _name) {
+    private void setName(String _name) {
         this.name = _name;
-        return _name;
     }
     private String getName() {
         return name;
     }
+
+
 
 }
