@@ -5,10 +5,6 @@ import android.icu.util.Calendar;
 
 public class Course {
 
-    public Course(String name, String Date) {
-        name = getName();
-    }
-
     private String name;
 
     private void setName(String _name) {
@@ -17,7 +13,4 @@ public class Course {
     private String getName() {
         return name;
     }
-
-
-
 }
