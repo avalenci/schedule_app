@@ -1,15 +1,22 @@
 package com.example.schedule_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Schedule extends AppCompatActivity {
 
-    public boolean button = false;
+    public static final String EXTRA_MESSAGE = "com.example.schedule_app.MESSAGE";
+
+    private static boolean button = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,16 +61,18 @@ public class Schedule extends AppCompatActivity {
         spinner7.setAdapter(adapter4);
     }
 
-
+    public void newClass(View view) {
+        Intent intent = new Intent(this, Table.class);
+        startActivity(intent);
+    }
 
     public static void courseLoad() {
         Course newCourse[] = new Course[10];
         int n = 0;
-//        while (buttonCheck()) {
-//
-//        }
+        while (buttonCheck()) {
+        }
     }
-    public boolean buttonCheck() {
+    private static boolean buttonCheck() {
         return button;
     }
     public void pressButton() {
